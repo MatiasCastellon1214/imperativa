@@ -86,9 +86,66 @@ console.log(mult);
 console.log(div);
 console.log(resta);
 console.log(modulo);
+console.log('------------------------');
+console.log('------------------------');
+console.log('------------------------');
+
 
 
 // OPERADORES DE COMPARACIÓN
 
+let n1 = 15;
+let n2 = 15;
+
+let nombre1 = 'Pepito';
+let nombre2 = 'Juancito';
+
+console.log( n1 < n2 ); // Menor que
+console.log( n1 > n2 ); // Mayor que
+console.log( n1 >= n2 ); // Mayor o igual que
+console.log( n1 <= n2 ); // Menor o igual que
+console.log( n1 == n2 ); // Igual que
+console.log(n1 != n2 ); // Distinto que
+
+
+// COMARACIÓN SIMPLE ---> Sólo evalúa el valor y no el tipo de dato
+
+console.log( nombre1 == nombre2 );
+console.log( nombre1 != nombre2 );
+
+let a = '12';
+let b = 12;
+console.log( a == b );
+console.log( a != b );
+
+
+// COMPARACIÓN ESTRICTA ---> Evalúa el valor pero también el tipo de dato
+
+console.log( a === b );
+console.log( a !== b );
+
+// Negación
+
+console.log('-----------------');
+let esMayor = true;
+console.log( !esMayor);
+
+let j = 1;
+let m = 2;
+
+console.log( !(1 > 2) );
+
+
 // OPERSDORES LÓGICOS
+
+
+// AND ---> &&
+// OR ---> ||
+
+// Quiero que me devuelva 'true' si se cumples las 2
+
+console.log( 1 > 2 && 1 < 5 && 10 < 21 ); // Devuelve 'true' si todos cumples
+
+console.log( 1 > 2 || 1 < 5 || 10 < 21 ); // Devuelve 'true' si por lo menos uno es 'true'
+
 
