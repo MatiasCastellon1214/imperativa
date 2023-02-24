@@ -42,5 +42,65 @@ let saludo2 = saludar('Super Ramita');
 console.log( saludo2 );
 
 
-// EXPRESADAS / comunes o arrows (flechas)
+// EXPRESADAS O ANÓNIMAS/ comunes o arrows (flechas)
+
+const multiplicar = function (n1, n2){
+    // BLOQUE DE CÓDIGO
+    return n1 * n1;
+}
+
+let resultadoMultiplicacion = multiplicar();
+
+// HOISTING
+
+
+// FUNCIONES DECLARADAS Y EXPRESADAS
+/*
+function ladrar (){
+    // DECLARADAS
+};
+
+const ladrar = function(){
+    // EXPRESADAS
+};*/
+
+
+
+// EXPRESADAS COMÚNES VS ARROW FLECHAS
+/*
+const dividir = function(){
+
+}
+*/
+
+const dividir = (num1, num2) => num1 / num2;
+
+let a = dividir(20, 5);
+console.log(a);
+
+
+// TODO ---> EJERCICIO 4 PLAUGROUND
+
+const anterior = ( numero ) => {
+    return --numero;
+}
+
+let res1 = res1(20);
+console.log(res1);
+
+const triple = ( numero ) => {
+    return numero * 3;
+}
+
+let res2 = triple(3);
+console.log(res2);
+
+const anteriorDelTriple = ( numero ) => {
+    //return (numero * 3) - 1;
+    //let resultadoTriple = triple(numero);
+    //let resultadoAnterior = anterior(resultadoMultiplicacion);
+    //return resultadoAnterior
+
+    return anterior( triple( numero )) // JS resuelve de adentro hacia afuera
+}
 
